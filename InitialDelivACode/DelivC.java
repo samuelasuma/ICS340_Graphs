@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.PrintWriter;
+import java.util.Random;
 
 // Class DelivC does the work for deliverable DelivC of the Prog340
 
@@ -11,6 +12,27 @@ public class DelivC {
 	Graph g;
 	
 	public DelivC( File in, Graph gr ) {
+		
+      
+
+        Random r = new Random();
+		
+        // uncomment the setSeed(…) line to get a nonrandom starting assignment. 
+        // different seeds will give different assignments.  
+        // !!!--- comment the next line out before turning in the program ---!!!
+        // r.setSeed( 10 );
+        for ( int course = 0; course < 21; course++ ) {
+            int sem = r.nextInt( 7 );
+            // Assign this course to be taken this semester.
+        }
+        
+     
+
+		
+		
+		
+		
+		
 		inputFile = in;
 		g = gr;
 		
@@ -30,6 +52,11 @@ public class DelivC {
 			System.err.format("Exception: %s%n", x);
 			System.exit(0);
 		}
+		
+		
+		
+		
+		
 		System.out.println( "DelivC:  To be implemented");
 	}
 }
